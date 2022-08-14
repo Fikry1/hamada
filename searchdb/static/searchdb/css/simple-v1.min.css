@@ -19,7 +19,7 @@
 
 @media (prefers-color-scheme:dark) {
     :root {
-        --bg: #494949;
+        --bg: #212121;
         --accent-bg: #2b2b2b;
         --text: #dcdcdc;
         --text-light: #ababab;
@@ -44,19 +44,18 @@ html {
 body {
     color: var(--text);
     background: var(--bg);
-    font-size:1.5em; /*var(--base-fontsize);*/
+    font-size: 1.5rem;/*var(--base-fontsize);*/
     line-height: var(--line-height);
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     flex: 1;
-    margin: 3% auto;
+    margin: 0 auto;
     max-width: 45rem;
     padding: 0 .5rem;
     overflow-x: hidden;
     word-break: break-word;
-    overflow-wrap: break-word;
-    align-items:center;
+    overflow-wrap: break-word
 }
 
 header {
@@ -79,7 +78,8 @@ header p {
 }
 
 main {
-    padding-top: 1.5rem
+    padding-top: 1.5rem;
+    margin-right:auto;
 }
 
 h1,
@@ -265,7 +265,7 @@ th {
 }
 
 th {
-    background: var(--accent-bg);
+    background:rgb(110, 194, 243); /*var(--accent-bg);*/
     font-weight: 700
 }
 

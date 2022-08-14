@@ -6,24 +6,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'searchdb/css/style.css' %}">
+    {% comment %}
+    <link rel="stylesheet" href="{% static 'searchdb/css/style.css' %}"> {% endcomment %}
     <link rel="stylesheet" href="{% static 'searchdb/css/simple-v1.min.css'%}">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="header">
-        <div class="home"><a href="#">Home</a></div>
-        <div class="about"><a href="#">Login</a></div>
-    </div>
-   
-{% block body %}
+    <header >
+        <nav>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'admin:index' %}">Login</a>
+        </nav>
+    </header>
+
+    {% block body %}
 
 
-{% endblock body %}
+    {% endblock body %}
 
 
-  <footer> Muhammad fikry </footer>
+    <footer> Muhammad fikry </footer>
 
 </body>
 
