@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+<div class="elform">
+
+        <div class="seatnumber">
+            <form method="post" action="{% url 'natega'%}">
+                {% csrf_token %}
+                <select name="mra7el" id="">
+                    <option value="1">الاول الاعدادي</option>
+                    <option value="2">الثاني الاعدادي</option>
+                </select>
+                <input type="text" name="seatnumber" id="" placeholder="Enter seat number">
+        </div>
+
+        <div class="search">
+            <input type="submit" value="search">
+    </form>
+</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+.natega{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.table{
+    width: 70%;
+   margin: auto;
+   display: flex;
+   align-items: center;
+
+}
+table{
+    width: 70%;
+}
+table th{
+    background-color: rgba(128, 128, 128, 0.61);
+}
+table td{
+    text-align: center;
+}
+.student_name,.student_seatnumber{
+    display:flex;
+}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block body %}
+       <div class="natega">
+            <div class="student_name">
+               الأسم : {{students}}
+            </div>
+            <div class = "student_seatnumber">
+                رقم الجلوس : {{students.seatNumber}}
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>المادة</th>
+                        <th>الدرجة</th>
+                    </tr>
+                    <tr>
+                        <td>اللغة العربية</td>
+                        <td>{{students.arabic}}</td>
+                    </tr>
+                    <tr>
+                        <td>الرياضيات</td>
+                        <td>{{students.math}}</td>
+                    </tr>
+                    <tr>
+                        <td>اللغة الانجليزية</td>
+                        <td>{{students.english}}</td>
+                    </tr>
+                    <tr>
+                        <td>الدراسات</td>
+                        <td>{{students.social}}</td>
+                    </tr>
+                    <tr>
+                        <td>العلوم</td>
+                        <td>{{students.sience}}</td>
+                    </tr>
+                    <tr>
+                        <td>التربية الاسلامية</td>
+                        <td>{{students.islamic}}</td>
+                    </tr>
+                    <tr>
+                        <td>انجليزي إضافي</td>
+                        <td>{{students.olenglish}}</td>
+                    </tr>
+                    <tr>
+                        <td>الحاسب الآلي</td>
+                        <td>{{students.computer}}</td>
+                    </tr>
+                    <tr>
+                        <td>التربية الفنية</td>
+                        <td>{{students.art}}</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        
+
+        {% endblock body %}
