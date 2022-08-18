@@ -1,3 +1,4 @@
+from tabnanny import verbose
 from unicodedata import decimal
 from django.db import models
 
@@ -14,9 +15,15 @@ class Student(models.Model):
     olenglish = models.DecimalField(max_digits=4, decimal_places=1)
     computer = models.DecimalField(max_digits=4, decimal_places=1)
     art = models.DecimalField(max_digits=4, decimal_places=1)
+    total = models.DecimalField(max_digits=4, decimal_places=1, null=True, blank=True)
 
     def __str__(self):
         return self.name
+    class Meta:
+        verbose_name = 'midel 1'
+        verbose_name_plural = 'midel 1'
+
+
      
 
 class Student2(models.Model):
@@ -31,7 +38,11 @@ class Student2(models.Model):
     olenglish = models.DecimalField(max_digits=4, decimal_places=1)
     computer = models.DecimalField(max_digits=4, decimal_places=1)
     art = models.DecimalField(max_digits=4, decimal_places=1)
+    total = models.DecimalField(max_digits=4, decimal_places=1)
 
     def __str__(self):
         return self.name
+    class Meta:
+        verbose_name = 'midel 2'
+        verbose_name_plural = 'midel 2'
     

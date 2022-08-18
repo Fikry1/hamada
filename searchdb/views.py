@@ -21,7 +21,8 @@ def natega(request):
         context={'students':table.objects.get(seatNumber=st)}
         return render(request,'searchdb/natega.html',context)
     except:
-     return HttpResponse('<center><h4>There is no Results</h4>')
+        Error ={'error_message':'* ﻻ توجد نتائج تأكد من رقم الجلوس'}
+        return render(request,'searchdb/index.html',Error)
     
    
 

@@ -6,5 +6,5 @@ from django.apps import AppConfig
 class SearchdbConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'searchdb'
-
+    verbose_name = 'School'
 
