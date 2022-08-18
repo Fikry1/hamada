@@ -18,7 +18,10 @@ def natega(request):
         table = Student2
 
     try:
-        context={'students':table.objects.get(seatNumber=st)}
+        total = table.objects.get(seatNumber=st)
+        mytotal = total.arabic + total.english + total.math + total.social + total.sience + total.islamic + total.olenglish + total.computer + total.art
+        percntage = round(mytotal / 480 * 100 ,1)
+        context={'students':table.objects.get(seatNumber=st),'total':mytotal,'percnt':percntage}
         return render(request,'searchdb/natega.html',context)
     except:
         Error ={'error_message':'* ﻻ توجد نتائج تأكد من رقم الجلوس'}

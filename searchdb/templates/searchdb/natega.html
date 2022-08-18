@@ -5,9 +5,10 @@
             <div style="margin-top: 3%;">
                الأسم : {{students}}
             </div>
-            <div class = "student_seatnumber">
+            <div>
                 رقم الجلوس : {{students.seatNumber}}
             </div>
+            <div style="text-align:center">النسبة: {{percnt}} %</div>
            
                 <table>
                     <tr>
@@ -50,7 +51,12 @@
                         <td>التربية الفنية</td>
                         <td>{{students.art}}</td>
                     </tr>
+                    <tr>
+                        <td>المجموع الكلي</td>
+                        <td>{{total}}</td>
+                    </tr>
 
                 </table>
+               
          
         {% endblock body %}
