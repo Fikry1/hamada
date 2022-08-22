@@ -130,3 +130,7 @@ STATICFILES_DIRS =[os.path.join(BASE_DIR,'searchdb/static')]
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# add import_export to permitions
+IMPORT_EXPORT_IMPORT_PERMISSION_CODE='add'
+IMPORT_EXPORT_EXPORT_PERMISSION_CODE='add'
