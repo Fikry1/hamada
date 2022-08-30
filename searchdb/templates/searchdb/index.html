@@ -5,10 +5,10 @@
 {% block body %}
 
 
-<main>
+<main style="text-align: center;">
     <form method="post" action="{% url 'natega'%}">
         {% csrf_token %}
-        <select name="mra7el" id="">
+        <select name="mra7el">
             <option value="1">الاول الاعدادي</option>
             <option value="2">الثاني الاعدادي</option>
         </select>
